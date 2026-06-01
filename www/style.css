@@ -1,0 +1,373 @@
+/* =========================
+   BASE GERAL
+========================= */
+
+body {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 45%, #bfdbfe 100%);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 20px;
+}
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+h1 {
+  text-align: center;
+  margin: 0 0 28px 0;
+  padding: 18px 22px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(90deg, #1d4ed8 0%, #2563eb 50%, #3b82f6 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
+  letter-spacing: 0.4px;
+}
+
+h2,
+h3 {
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.well {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(147, 197, 253, 0.55);
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(30, 64, 175, 0.10);
+  padding: 22px;
+}
+
+.control-label {
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.help-block {
+  color: #475569;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-control,
+.selectize-input,
+.selectize-control.single .selectize-input {
+  min-height: 46px;
+  border-radius: 14px !important;
+  border: 1px solid #93c5fd !important;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  box-shadow: none !important;
+  padding: 10px 14px !important;
+}
+
+.form-control:focus,
+.selectize-input.focus,
+.selectize-control.single .selectize-input.focus {
+  border-color: #2563eb !important;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.16) !important;
+}
+
+.selectize-dropdown {
+  border-radius: 14px;
+  border: 1px solid #bfdbfe;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.14);
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn,
+.btn-default {
+  width: 100%;
+  min-height: 48px;
+  border: none !important;
+  border-radius: 14px !important;
+  background: linear-gradient(90deg, #1d4ed8 0%, #2563eb 55%, #60a5fa 100%);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.98rem;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.24);
+  transition: all 0.25s ease;
+}
+
+.btn:hover,
+.btn-default:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.32);
+  background: linear-gradient(90deg, #1e40af 0%, #1d4ed8 55%, #3b82f6 100%);
+}
+
+.btn:active,
+.btn-default:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   ABAS
+========================= */
+
+.nav-tabs {
+  border-bottom: 1px solid #bfdbfe;
+  margin-bottom: 18px;
+}
+
+.nav-tabs > li > a {
+  color: #1e3a8a;
+  font-weight: 700;
+  border-radius: 14px 14px 0 0;
+  border: none;
+  padding: 12px 16px;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #ffffff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  border-bottom-color: transparent;
+}
+
+/* =========================
+   CARDS PRINCIPAIS
+========================= */
+
+.main-panel-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(147, 197, 253, 0.55);
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(30, 64, 175, 0.10);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   TABELAS
+========================= */
+
+.table {
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table thead {
+  background: linear-gradient(90deg, #dbeafe 0%, #bfdbfe 100%);
+  color: #1e3a8a;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle !important;
+  padding: 13px 12px !important;
+  border-color: #dbeafe !important;
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(239, 246, 255, 0.75);
+}
+
+.table tbody tr:hover {
+  background: rgba(191, 219, 254, 0.45);
+  transition: background 0.2s ease;
+}
+
+/* =========================
+   GRÁFICOS
+========================= */
+
+.shiny-plot-output {
+  background: #ffffff;
+  border: 1px solid rgba(147, 197, 253, 0.45);
+  border-radius: 18px;
+  padding: 14px;
+  min-height: 320px;
+}
+
+/* =========================
+   SAÍDAS DE TEXTO / ESTATÍSTICA
+========================= */
+
+pre,
+.shiny-text-output,
+.shiny-verbatim-output {
+  background: #f8fafc;
+  border: 1px solid #bfdbfe;
+  border-radius: 16px;
+  color: #0f172a;
+  padding: 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+/* =========================
+   INSIGHT AUTOMÁTICO
+========================= */
+
+#insight_texto {
+  display: block;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #93c5fd;
+  color: #1e3a8a;
+  padding: 18px;
+  border-radius: 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   CARDS EXTRAS
+========================= */
+
+.card-clima {
+  background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 50%, #60a5fa 100%);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.22);
+}
+
+.card-clima .titulo {
+  font-size: 0.95rem;
+  opacity: 0.92;
+  margin-bottom: 6px;
+}
+
+.card-clima .valor {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+/* =========================
+   ESPAÇAMENTOS
+========================= */
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #93c5fd, transparent);
+  margin: 22px 0;
+}
+
+br {
+  line-height: 0.8;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 992px) {
+  .container-fluid {
+    padding: 18px 14px;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+    padding: 16px;
+  }
+
+  .well {
+    margin-bottom: 20px;
+  }
+
+  .shiny-plot-output {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.45rem;
+    border-radius: 16px;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  .well,
+  .main-panel-card,
+  .shiny-plot-output,
+  #insight_texto {
+    border-radius: 16px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.92rem;
+    padding: 10px 8px !important;
+  }
+
+  .btn,
+  .btn-default {
+    min-height: 44px;
+    font-size: 0.95rem;
+  }
+
+  .nav-tabs > li > a {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-fluid {
+    padding: 12px 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    padding: 14px 12px;
+  }
+
+  .well,
+  .main-panel-card {
+    padding: 16px;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.84rem;
+  }
+
+  #insight_texto {
+    font-size: 0.95rem;
+    padding: 14px;
+  }
+}
