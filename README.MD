@@ -131,45 +131,6 @@ Depois que a aplicação abrir:
 6. Veja a interpretação automática na aba **Insights**;
 7. Veja a base organizada na aba **Dados**.
 
-## Possíveis erros
-
-Se aparecer erro de pacote não encontrado, rode novamente:
-
-```R
-install.packages(c(
-  "shiny",
-  "httr",
-  "jsonlite",
-  "dplyr",
-  "lubridate",
-  "ggplot2",
-  "tidyverse"
-))
-```
-
-Se aparecer erro de arquivo não encontrado, confira se os arquivos estão dentro da pasta `R/` com estes nomes:
-
-```bash
-R/
-├── api.R
-├── limpeza.R
-├── graficos.R
-├── insights.R
-└── estatistica.R
-```
-
-Se o estilo visual não carregar, confira se o arquivo CSS está em:
-
-```bash
-www/style.css
-```
-
-## Status
-
-Projeto em desenvolvimento.
-
-## Autora
-
 ## Autora
 
 **Nome:** Marcela Kawamoto Fernandes  
